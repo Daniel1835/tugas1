@@ -1,6 +1,3 @@
-# Install paket yang diperlukan
-# !pip install pandas pmdarima streamlit
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -18,6 +15,9 @@ import contextlib
 # Muat dataset CSV
 # Contoh: data = pd.read_csv('nama_file.csv')
 data = pd.read_csv('minyak2.csv')
+
+# Convert 'Date' column to datetime
+data['Date'] = pd.to_datetime(data['Date'])
 
 # Tampilkan beberapa baris pertama dari dataset
 st.title("Daniel Irwansyah")
