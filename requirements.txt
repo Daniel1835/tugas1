@@ -4,4 +4,4 @@ matplotlib
 statsmodels
 pmdarima
 sklearn
-streamlit
+
